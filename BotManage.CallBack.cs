@@ -26,6 +26,7 @@ namespace TeamProject
                     $"📞Tel raqam:  {data[i].PhoneNumber}" +
                     $"📩tg:  @{data[i].UserName}\n" +
                     $"📍quyida lokatsiyasi";
+                //asdasd as
                 
                 await client.SendPhotoAsync(callbackQuery.Message.Chat.Id, photo: InputFile.FromFileId(data[i].Photos[0]), caption: txt);
                 await client.SendLocationAsync(callbackQuery.Message.Chat.Id, latitude: data[i].Latitude, longitude: data[i].Longtitude);
